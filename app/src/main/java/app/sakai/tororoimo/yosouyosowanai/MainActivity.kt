@@ -23,9 +23,18 @@ class MainActivity : AppCompatActivity() {
         val randomName = Random()
         val index = randomName.nextInt(4)
         val name = people[index]
+        val stateNumber = Random().nextInt(2)
         nameTextView.text = name+ "に"
         foodTextView.text = food[Random().nextInt(5)] + "を"
-        verbTextView.text = state[Random().nextInt(2)]
+        verbTextView.text = state[stateNumber]
+        when (stateNumber) {
+            0 -> {
+                verbTextView.setTextSize(30f)
+            }
+            1 -> {
+                verbTextView.setTextSize(35f)
+            }
+        }
     }
 
 
