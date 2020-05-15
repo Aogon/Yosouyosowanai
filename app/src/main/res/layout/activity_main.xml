@@ -65,9 +65,12 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/nameTextVIew"
+                    android:id="@+id/nameTextView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#31F44336"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:gravity="center"
                     android:text="なまえ"
                     android:textColor="#6A3201"
@@ -76,7 +79,10 @@
                 <TextView
                     android:id="@+id/foodTextView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#30E91E63"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:gravity="center"
                     android:text="食べ物"
                     android:textColor="#6A3201"
@@ -93,7 +99,10 @@
                 <TextView
                     android:id="@+id/verbTextView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#309C27B0"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:gravity="center"
                     android:text="よそえました！"
                     android:textColor="#6A3201"
@@ -102,8 +111,13 @@
                 <Button
                     android:id="@+id/button"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#2196F3"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:onClick="serveFood"
+                    android:text="診断！"
+                    android:textSize="40sp" />
             </LinearLayout>
         </LinearLayout>
 
